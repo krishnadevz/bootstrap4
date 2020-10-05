@@ -108,7 +108,7 @@
           </div>
       </div>
   </div>
-
+  
     </div>
     <header class="jumbotron">
       <div class="container">
@@ -123,14 +123,83 @@
             <a href="./aboutus.html" target="_blank">AboutUs</a>
           </div>
           <div class="col-12 col-sm align"></div>
-        <div>
-          <img src="./img/logo.png" class="img-fluid" />
-          <a href="#card" class="btn btn-warning btn-sm "  data-toggle="tooltip"   data-html="true"  title="Or Call us at  <br><strong>+852 12345678</strong>"
-            data-placement="bottom" >Reserve Table</a>
+          <div class="col-xs-12 col-sm-2">
+            <p style="padding:40px;"></p>
+            <a type="button" class="btn btn-warning btn-block" data-toggle="modal" data-target="#reserveModal"> Reserve Table </a>
         </div>
         </div>
       </div>
     </header>
+    <div id="reserveModal" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-lg " role="content">
+        <div class="modal-content">
+          <div class="modal-header">
+              <h4 class="modal-title"> Reserve Table </h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+              <form class="form-horizontal" role="form">
+                <div class="form-group">
+                  <label for="numberOfGuests-id" class="col-xs-12 col-sm-2 control-label">Number of Guests</label>
+
+                  <div class="radio radio-inline col-xs-12 col-sm-10">
+                      <label class="radio-inline">
+                          <input type="radio" name="numberOfGuests" id="numberOfGuests-id" value="1guest">1
+                      </label>
+                      <label class="radio-inline">
+                          <input type="radio" name="numberOfGuests" id="numberOfGuests-id" value="2guests">2 
+                      </label>
+                      <label class="radio-inline">
+                          <input type="radio" name="numberOfGuests" id="numberOfGuests-id" value="3guesrs">3 
+                      </label>
+                      <label class="radio-inline">
+                          <input type="radio" name="numberOfGuests" id="numberOfGuests-id" value="4guesrs">4 
+                      </label>
+                      <label class="radio-inline">
+                          <input type="radio" name="numberOfGuests" id="numberOfGuests-id" value="5guests">5 
+                      </label>
+                      <label class="radio-inline">
+                          <input type="radio" name="numberOfGuests" id="numberOfGuests-id" value="6guests">6 
+                      </label>
+                  </div>
+              </div>
+              <div class="form-group">
+                <label for="date" class="col-xs-12 col-sm-2 control-label">Section</label>
+                <div class="btn-group" data-toggle="buttons">
+                  <label class="btn btn-success active">
+                    <input type="radio" class="btn btn-danger" name="options" id="option_non_smoking" autocomplete="off" checked>Non-Smoking
+                  </label>
+                  <label class="btn btn-danger">
+                    <input type="radio" name="options" id="option_smoking" autocomplete="off">Smoking
+                  </label>
+                </div>
+            </div>
+            <div class="form-group has-feedback">
+              <label for="date" class="col-xs-12 col-sm-2 control-label">Date and Time</label>
+              <div class="col-xs-6 col-sm-3">
+                  <input type="text" class="form-control" id="date" name="date" placeholder="Date">
+                  <span class="glyphicon glyphicon-calendar form-control-feedback" aria-hidden="true"></span>
+              </div>
+              <div class="col-xs-6 col-sm-offset-1 col-sm-3">
+                  <input type="text" class="form-control" id="time" name="time" placeholder="Time">
+                  <span class="glyphicon glyphicon-time form-control-feedback" aria-hidden="true"></span>
+              </div>
+          </div>
+
+          <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-10">
+                  <button type="submit" class="btn btn-primary">Reserve</button>
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+              </div>
+          </div>
+              </form>
+          </div>
+      </div>
+      
+      
+      
+      </div>
+        </div>
     <div class="container">
       <div class="row">
         <ol class="col-12 breadcrumb">
